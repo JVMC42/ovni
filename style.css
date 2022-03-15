@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+    background-position: left top;
+    animation: fundo 5s infinite alternate-reverse ease-in-out ;
+}
+
+#tela {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#ovini {   
+    animation: balanco 2s infinite alternate ease-in-out;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#vidro {
+    border: solid white;
+    background-color: aquamarine;
+    width: 450px;
+    height: 450px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    box-shadow: 10px 20px 5px  rgba(0, 0, 0, 0.137) inset;
+    
+}
+
+#base {
+   
+    background-color: gray;
+    margin-top: 300px;
+    margin-left: -150px;
+    width: 750px;
+    height: 200px;
+    border-radius: 100%;
+    border: solid rgb(34, 34, 34);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.185) inset;
+    
+}
+
+#luz1, #luz2, #luz3, #luz4, #luz5, #luz6{
+    border: double black;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 35px;
+    animation: piscar 1.3s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+#luz1, #luz2, #luz3{
+    transform: translate(50px);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.185);
+    
+}
+
+#luz4, #luz5, #luz6{
+    transform: translate(-50px);
+    box-shadow: 1px 1px 40px rgb(0, 0, 0);
+}
+
+
+#et {
+    background-color: green;
+    border-radius: 50%;
+    width: 90px;
+    height: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    border: solid rgb(0, 85, 0);
+    transform: translateY(-5px);
+    box-shadow: 10px 10px  rgba(0, 0, 0, 0.185) inset;
+
+}
+
+#olho1, #olho2 {
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    margin-top: 40px;
+    width: 30px;
+    height: 40px;
+    border: solid rgb(31, 31, 31);
+}
+
+
+@keyframes piscar {
+
+    0% {
+        background-color: yellow;
+        box-shadow: 1px 1px 40px yellow;
+    }
+
+    25% {
+        background-color: orangered;
+        box-shadow: 1px 1px 40px orangered;
+    }
+
+    50% {
+        background-color: rgb(154, 46, 255);
+        box-shadow: 1px 1px 40px rgb(154, 46, 255);
+    }
+
+    100% {
+        background-color: rgb(0, 231, 0);
+        box-shadow: 1px 1px 40px rgb(0, 231, 0);
+    }
+
+    
+    
+}
+
+@keyframes fundo {
+
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes balanco {
+    from {
+      transform: translateY(90px);
+    }
+
+    to {
+        transform: translateY(-90px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

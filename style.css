@@ -144,11 +144,11 @@ body {
 
 @keyframes balanco {
     from {
-      transform: translateY(90px);
+      transform: translateY(70px);
     }
 
     to {
-        transform: translateY(-90px);
+        transform: translateY(-70px);
     }
 }
 
